@@ -21,7 +21,7 @@ const AddNewService = () => {
             <div className="colo w-full max-w-xl p-8">
                 <form className="w-full" onSubmit={handleSubmit(onSubmit)}>
                     <input className="border w-full border-none outline-none px-4 py-1 border-black mt-4 text-base placeholder-dark-500" {...register("name", { required: true})} placeholder="Tour area name"/>
-                    <input className="border w-full border-none outline-none px-4 py-1 border-black mt-4 text-base placeholder-dark-500" {...register("description")} placeholder="Description min 15 letter"/>
+                    <input className="border w-full border-none outline-none px-4 py-1 border-black mt-4 text-base placeholder-dark-500" {...register("description")} placeholder="Description min 50 letter"/>
                     <input className="border w-full border-none outline-none px-4 py-1 border-black mt-4 text-base placeholder-dark-500" {...register("url")} placeholder="Image Url"/>
                     <input className="border w-full border-none outline-none px-4 py-1 border-black mt-4 text-base placeholder-dark-500" type="number" {...register("price")} placeholder="Price"/>
             

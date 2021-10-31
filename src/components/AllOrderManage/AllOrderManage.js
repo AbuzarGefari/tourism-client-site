@@ -70,9 +70,7 @@ const AllOrderManage = () => {
      
     return (
         <div className="py-10 container mx-auto min-h-screen ">
-            <div className="bg-indigo-800 py-8">  
-                 <h1 className=" text-3xl text-center font-bold text-white md:text-6xl">Manage All Orders</h1>
-            </div>
+           
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
                 {
                     orders.map(order => 
@@ -87,7 +85,7 @@ const AllOrderManage = () => {
                                     <div className="col-span-3">
                                         <h2 className="text-white ">{order.name}</h2>
                                         <h2 className="text-white ">{order.email}</h2>
-                                        <h2 className="text-white ">Location : {order.Location}</h2>
+                                        <h2 className="text-white ">{order.Location}</h2>
                                     </div>
                                 </div>
                                 <div className="">
@@ -109,9 +107,10 @@ const AllOrderManage = () => {
                                 </div>
                                 </div>
                             </div>
-                            <div>
-                                <button onClick={()=> handleDelete(order._id)} className="bg-indigo-900 hover:bg-indigo-500 text-red-50 hover:text-white-900 py-2 px-8 border-black-900 border-2 smooth-animation cursor-pointer mr-2">Delete</button>
-                                <button onClick={()=>acceptOrderHandle(order._id)} className="bg-indigo-900 hover:bg-indigo-500 text-red-50 hover:text-white-900 py-2 px-8 border-black-900 border-2 smooth-animation cursor-pointer">Accept Order</button>
+                            <div className="s">
+                            <button onClick={()=>acceptOrderHandle(order._id)} className="bg-indigo-900 hover:bg-indigo-500 text-red-50 hover:text-white-900 py-2 px-8 border-black-900 border-2 smooth-animation cursor-pointer">Confirm Order</button>
+
+                                <button onClick={()=> handleDelete(order._id)} className="bg-indigo-900 hover:bg-indigo-500 text-red-50 hover:text-white-900 py-2 px-8 border-black-900 border-2 smooth-animation cursor-pointer mr-2">Delete order</button>
                             </div>
                         </div>
                         </Zoom>

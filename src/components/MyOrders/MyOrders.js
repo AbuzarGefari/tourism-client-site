@@ -44,7 +44,7 @@ const MyOrders = () => {
     return (
         <div className="container mx-auto py-10  min-h-screen">
             <div className="bg-indigo-900 py-3">
-                <h1 className="text-center text-3xl text-white md:text-6xl font-bold">My Orders </h1>
+                <h1 className="text-center text-3xl text-white md:text-6xl font-bold">My Orders Status </h1>
             </div>
            {
                checkMyOrder.map(order => <Zoom>
@@ -54,8 +54,7 @@ const MyOrders = () => {
                     <div className="sm:col-span-2 md:grid grid-cols-2 gap-4">
                     <div>
                         <img className="w-full" src={order.url} alt="" />
-                    </div>
-                    <div className="py-3 md:py-0">
+                   
                         <h1 className="text-2xl text-indigo-900 font-bold">Status : {order.status}</h1>
                         <h2 className="text-xl md:text-2xl text-justify font-medium">{order.serviceName}</h2>
                         <h1 className="text-2xl text-justify">Price : {order.price}</h1>
@@ -65,12 +64,12 @@ const MyOrders = () => {
                     {/* User */}
                     <div className="grid lg:grid-cols-4 gap-2">
                         <div className=" flex md:block items-center">
-                            <img className="md:w-16 lg:w-full" src={order.userImg} alt="" />
+                            {/* <img className="md:w-16 lg:w-full" src={order.userImg} alt="" /> */}
                         </div>
                         <div className="lg:col-span-3 text-left">
                             <h2 className="text-md font-bold text-indigo-900">{order.name}</h2>
                             <h2 className="text-md font-bold text-indigo-900">{order.email}</h2>
-                            <h2 className="text-md font-bold text-indigo-900">Age : {order.age}</h2>
+                            {/* <h2 className="text-md font-bold text-indigo-900">Age : {order.age}</h2> */}
                             <button onClick={()=> handleDelete(order._id)} className="bg-indigo-900 mt-3 hover:bg-indigo-500 text-yellow-50 hover:text-yellow-50 py-2 px-8 border-indigo-500 border-2 smooth-animation cursor-pointer mr-2">Delete</button>
                         </div>
                     </div>

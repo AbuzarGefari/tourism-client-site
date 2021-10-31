@@ -11,13 +11,13 @@ const Service = ({service}) => {
             <h2 className="mt-3 text-2xl font-medium">{name}</h2>
             <div className="text-2xl py-3 text-gray-900">TAKA <br />
               <span className="font-medium text-">{price}</span> 
-              <span className="text-lg font-semibold text-gray-900"> / Hours</span>
+              <span className="text-lg font-semibold text-gray-900"> /Night</span>
             </div>
             <div className="">
                 {/* This is Divider */}
             </div>
             <p className="pt-3 pb-8 text-md text-gray-700 font-medium">{description.substring(0, 30)} <br /> {description.substring(0, 30)}</p>
-            <Link className="smooth-animation bg-indigo-700   hover:bg-indigo-900 text-white-900 hover:text-yellow-50 border-2 py-2 px-8" to={`/services/${_id}`}>Booking Now</Link>
+            <Link className="smooth-animation bg-indigo-700   hover:bg-indigo-900 text-indigo-50 hover:text-yellow-50 border-2 py-2 px-8" to={`/services/${_id}`}>Booking Now</Link>
         </div>
     );
 };

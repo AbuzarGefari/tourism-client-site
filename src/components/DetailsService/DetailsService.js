@@ -44,18 +44,18 @@ const DetailsService = () => {
                <img src={url} alt="" />
            </div>
            <div className="lg:col-span-2 px-3 lg:py-0">
-               <h1 className="text-2xl text-yellow-900 font-bold">{name}</h1>
-               <p className="text-md text-yellow-700 py-3">{description}</p>
-               <h1 className="text-yellow-900 text-xl font-bold capitalize py-2">Order information</h1>
+               <h1 className="text-2xl text-black-900 font-bold">{name}</h1>
+               <p className="text-md text-black-700 py-3">{description}</p>
+               <h1 className="text-black-900 text-xl font-bold capitalize py-2">Order information</h1>
                <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    <input className="border-2 border-indigo-500 py-1 px-3"  value={user.displayName} placeholder="Name" {...register("name", { required: true})} />
-                    <input className="border-2 border-indigo-500 py-1 px-3"  value={user.email} placeholder="Email" {...register("email", { required: true })} />
-                    <input className="border-2 border-indigo-500 py-1 px-3"  value={user.photoURL} placeholder="user image url" {...register("userImg", { required: true })} />
-                    <input className="border-2 border-indigo-500 py-1 px-3" placeholder="home towns" {...register("towns", { required: true })} />
-                    <input className="border-2 border-indigo-500 py-1 px-3" placeholder="Country" {...register("country", { required: true })} />
-                    {/* <input className="border-2 border-indigo-500 py-1 px-3" placeholder="Post office Serial" {...register("post_office", { required: true })} /> */}
-                    <input className="border-2 border-indigo-500 py-1 px-3" type="number" {...register("age", {required: true, min: 18, max: 75 })} placeholder="Age 18 to 75"/>
-                    <input className="border-2 py-2 px-3 cursor-pointer bg-indigo-900 hover:bg-yellow-50 text-yellow-50 hover:text-black-900 border-indigo-900 smooth-animation" type="submit" value="Confirm Book"/>
+                    <input className="border-2 border-indigo-500 py-1 px-3"  value={user.displayName} placeholder="Name" {...register("name", { required: true})} /> <br />
+                    <input className="border-2 border-indigo-500 py-1 px-3"  value={user.email} placeholder="Email" {...register("email", { required: true })} /> <br />
+                    <input className="border-2 border-indigo-500 py-1 px-3"  value={user.photoURL} placeholder="user image url" {...register("userImg", { required: true })} /> <br />
+                    <input className="border-2 border-indigo-500 py-1 px-3" placeholder="home towns" {...register("towns", { required: true })} /> <br />
+                    <input className="border-2 border-indigo-500 py-1 px-3" placeholder="Country" {...register("country", { required: true })} /> <br />
+                    
+                    {/* <input className="border-2 border-indigo-500 py-1 px-3" type="number" {...register("age", {required: true, min: 10, max: 75 })} placeholder="Age 18 to 75"/> */}
+                    <input className="border-2 py-2 px-3 cursor-pointer bg-indigo-900 hover:bg-indigo-900 text-indigo-50 hover:text-black-900 border-indigo-900 smooth-animation" type="submit" value="Confirm Book"/>
                 </form>
            </div>
         </div>

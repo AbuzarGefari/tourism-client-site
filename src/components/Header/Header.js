@@ -22,11 +22,9 @@ const Header = () => {
         <div className="bg-indigo-900 z-10 py-3 fixed w-full left-0 top-0">
             <div className="container mx-auto px-3 h-8 flex items-center justify-between">
                 <div className="h-8">
-                {/* <Link to="/">
-                        <img className="h-full logo" src={log} alt="" />
-                    </Link> */}
+              
              
-<h1 className="text-white text-lg font-bold capitalize  lg:ml-8">TOUR GURU</h1>
+<h1 className="text-white text-lg font-bold capitalize  lg:ml-8">Travell king</h1>
 
 
                 </div>

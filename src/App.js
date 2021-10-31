@@ -12,6 +12,7 @@ import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import MyOrders from './components/MyOrders/MyOrders';
 import NotPage from './components/NotPage/NotPage';
 
+
 import AuthProvider from './contexts/AuthProvider';
 
 function App() {
@@ -60,7 +61,7 @@ function App() {
             <Footer/>
           </PrivateRoute>
           <Route path="*">
-            <NotPage/>
+           <NotPage></NotPage>
           </Route>
        </Switch>
     </Router>
