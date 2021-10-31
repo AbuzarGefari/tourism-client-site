@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 const AllOrderManage = () => {
     const [orders, setOrders] = useState([]);
     useEffect(()=> {
-        fetch('http://localhost:5000/addOrders')
+        fetch('https://shrieking-monster-06481.herokuapp.com/addOrders')
         .then(res => res.json())
         .then(data => setOrders(data));
     },[orders])
@@ -22,7 +22,7 @@ const AllOrderManage = () => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                const url =  `http://localhost:5000/addOrders/${id}`;
+                const url =  `https://shrieking-monster-06481.herokuapp.com/addOrders/${id}`;
                 fetch(url, {
                     method: 'delete'
                 })
@@ -49,7 +49,7 @@ const AllOrderManage = () => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                const url =  `http://localhost:5000/addOrders/${id}`;
+                const url =  `https://shrieking-monster-06481.herokuapp.com/addOrders/${id}`;
                 fetch(url, {
                     method: 'PUT'
                 })

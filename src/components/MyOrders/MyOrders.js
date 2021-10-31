@@ -10,7 +10,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders] = useState([]);
     const {user} = useAuth()
     useEffect(()=>{
-        fetch('http://localhost:5000/addOrders')
+        fetch('https://shrieking-monster-06481.herokuapp.com/addOrders')
         .then(res => res.json())
         .then(data => setMyOrders(data));
     }, [myOrders])
@@ -25,7 +25,7 @@ const MyOrders = () => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                const url =  `http://localhost:5000/addOrders/${id}`;
+                const url =  `https://shrieking-monster-06481.herokuapp.com/addOrders/${id}`;
                 fetch(url, {
                     method: 'DELETE'
                 })
