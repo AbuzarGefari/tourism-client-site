@@ -12,7 +12,7 @@ const Services = () => {
     },[services])
     return (
         <div className="bg-white">
-            <div className="container mx-auto px-3 grid grid-cols-3 gap-6 py-10">
+            <div className="container py-12 mx-auto grid grid-cols-1 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-4 xl:gap-6">
                 {
                     services.map(service => <Service key={service._id} service={service}></Service>)
                 }

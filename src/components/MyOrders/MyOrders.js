@@ -56,7 +56,7 @@ const MyOrders = () => {
                         <img className="w-full" src={order.url} alt="" />
                     </div>
                     <div className="py-3 md:py-0">
-                        <h1 className="text-2xl text-yellow-900 font-bold">Status : {order.status}</h1>
+                        <h1 className="text-2xl text-indigo-900 font-bold">Status : {order.status}</h1>
                         <h2 className="text-xl md:text-2xl text-justify font-medium">{order.serviceName}</h2>
                         <h1 className="text-2xl text-justify">Price : {order.price}</h1>
                         {/* <p className="text-md text-justify">{order.description.substring(1, 150)}</p> */}
@@ -68,10 +68,10 @@ const MyOrders = () => {
                             <img className="md:w-16 lg:w-full" src={order.userImg} alt="" />
                         </div>
                         <div className="lg:col-span-3 text-left">
-                            <h2 className="text-md font-bold text-yellow-900">{order.name}</h2>
-                            <h2 className="text-md font-bold text-yellow-900">{order.email}</h2>
-                            <h2 className="text-md font-bold text-yellow-900">Age : {order.age}</h2>
-                            <button onClick={()=> handleDelete(order._id)} className="bg-yellow-900 mt-3 hover:bg-yellow-50 text-yellow-50 hover:text-yellow-900 py-2 px-8 border-yellow-900 border-2 smooth-animation cursor-pointer mr-2">Delete</button>
+                            <h2 className="text-md font-bold text-indigo-900">{order.name}</h2>
+                            <h2 className="text-md font-bold text-indigo-900">{order.email}</h2>
+                            <h2 className="text-md font-bold text-indigo-900">Age : {order.age}</h2>
+                            <button onClick={()=> handleDelete(order._id)} className="bg-indigo-900 mt-3 hover:bg-indigo-500 text-yellow-50 hover:text-yellow-50 py-2 px-8 border-indigo-500 border-2 smooth-animation cursor-pointer mr-2">Delete</button>
                         </div>
                     </div>
                 </div>

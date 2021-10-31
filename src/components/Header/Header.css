@@ -5,7 +5,8 @@
 
   .logo{
    
-    height: 120px;
+  width: 100px;
+  margin-top: 0px;
   }
 
 .menu-handle {
@@ -29,7 +30,7 @@
           rgba(120, 54, 15, 0.645),
           rgba(120, 54, 15, 0.645)
         ),
-        url(https://i.ibb.co/py7p0Kc/banner-2-bg-2.jpg) no-repeat top center;
+        url(https://i.ibb.co/hZ3yzvx/sssssssssss.png) no-repeat top center;
       background-attachment: fixed;
       background-size: cover;
       transition: all 0.5s linear;
@@ -62,7 +63,7 @@
           rgba(120, 54, 15, 0.645),
           rgba(120, 54, 15, 0.645)
         ),
-        url(https://i.ibb.co/py7p0Kc/banner-2-bg-2.jpg) no-repeat top center;
+        url(https://i.ibb.co/hZ3yzvx/sssssssssss.png) no-repeat top center;
       background-attachment: fixed;
       background-size: cover;
       transition: all 0.5s linear;

@@ -105,13 +105,13 @@ const AllOrderManage = () => {
                                    <br />
                                    <strong className="text-md text-indigo-900">Country : {order.country}</strong>
                                    <br />
-                                   <strong className="text-md text-indigo-900">Post Office : {order.post_office}</strong>
+                                   {/* <strong className="text-md text-indigo-900">Post Office : {order.post_office}</strong> */}
                                 </div>
                                 </div>
                             </div>
                             <div>
-                                <button onClick={()=> handleDelete(order._id)} className="bg-indigo-900 hover:bg-yellow-50 text-red-50 hover:text-white-900 py-2 px-8 border-black-900 border-2 smooth-animation cursor-pointer mr-2">Delete</button>
-                                <button onClick={()=>acceptOrderHandle(order._id)} className="bg-indigo-900 hover:bg-yellow-50 text-red-50 hover:text-white-900 py-2 px-8 border-black-900 border-2 smooth-animation cursor-pointer">Accept Order</button>
+                                <button onClick={()=> handleDelete(order._id)} className="bg-indigo-900 hover:bg-indigo-500 text-red-50 hover:text-white-900 py-2 px-8 border-black-900 border-2 smooth-animation cursor-pointer mr-2">Delete</button>
+                                <button onClick={()=>acceptOrderHandle(order._id)} className="bg-indigo-900 hover:bg-indigo-500 text-red-50 hover:text-white-900 py-2 px-8 border-black-900 border-2 smooth-animation cursor-pointer">Accept Order</button>
                             </div>
                         </div>
                         </Zoom>
